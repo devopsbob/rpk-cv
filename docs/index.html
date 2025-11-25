@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Robert (Bob) Kranson Home Page</title>
+  <title>Curriculum Vitae and Resumes of Robert (Bob Kranson)</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -13,6 +13,11 @@
       color: #222;
       margin: 0;
       padding: 0;
+    }
+    .print-date {
+      display: none; /* hidden on screen, printed via print stylesheet */
+      font-size: 12px;
+      margin-bottom: 10px;
     }
     .header {
       background: #232f3e;
@@ -65,28 +70,57 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="/assets/css/print-styles.css" media="print" onload="this.media='all'" />
+  <script>
+    (function(){
+      function formatPrintDate(d) {
+        var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        var day = d.getDate();
+        if (day < 10) day = '0' + day;
+        var mon = months[d.getMonth()];
+        var year = d.getFullYear();
+        return day + '-' + mon + '-' + year;
+      }
+
+      window.onbeforeprint = function() {
+        var printed = "Printed on: " + formatPrintDate(new Date());
+        var el = document.getElementById('print-date');
+        if (el) el.textContent = printed;
+        try {
+          document.documentElement.setAttribute('data-print-date', printed);
+        } catch (e) {
+          /* ignore if setting attribute fails in some environments */
+        }
+      };
+    })();
+    window.onafterprint = function() {
+      try {
+        document.documentElement.removeAttribute('data-print-date');
+      } catch (e) {}
+    };
+  </script>
 </head>
 <body>
   <div class="header">
     <h1>IT Professional Portfolio</h1>
     <p>Curriculum Vitae & Professional Resumes for Robert (Bob) Kranson.</p>
   </div>
-  <div class="container">
-    <h1 id="curriculum-vitae-and-resumes-of-robert-bob-kranson">Curriculum Vitae and Resumes of Robert (Bob Kranson)</h1>
+  <div class="main">
+    <div class="container">
+    <p>Welcome to my curriculum vitae hub. These pages intentionally present minimal public information to encourage serious inquiries and focused discussions about business outcomes.</p>
 
-<p>Welcome to my curriculum vitae home page site. I have updated these pages to reveal only minimum information. This is to focus efforts to interested parties and genuine business outcomes and objectives.</p>
+<p>I design and deploy infrastructure and application build systems with a strong focus on secure, best‑of‑breed configurations. I have applied these skills across industries as both an implementer and a vendor support technician, and I have built a variety of static and dynamic websites over the years.</p>
 
-<p>(This site is hosted at: <a href="https://devopsbob.github.io/rpk-cv">https://devopsbob.github.io/rpk-cv</a>
-)</p>
+<p>(This site is hosted at: <a href="https://devopsbob.github.io/rpk-cv">https://devopsbob.github.io/rpk-cv</a>)</p>
 
 <h2 id="robert-bob-kranson">Robert (Bob) Kranson</h2>
 
-<p><strong>Sterling Heights, Michigan, 48310</strong><br />
-<strong><a href="mailto:devopsbob@outlook.com">mailto:devopsbob@outlook.com</a></strong><br /></p>
+<p><strong>Sterling Heights, Michigan, 48310</strong>
+<strong><a href="mailto:devopsbob@outlook.com">devopsbob@outlook.com</a></strong></p>
 
 <h2 id="protected-links">Protected Links</h2>
 
-<p>The following pages will be provided to interested parties whom first request and obtain an access token. This prevents anonymous scraping of the information.</p>
+<p>The pages below are available to interested parties who request access and obtain a short-term access token. This reduces anonymous scraping and protects detailed content.</p>
 
 <h3 id="resumes">Resumes</h3>
 
@@ -96,7 +130,7 @@
 
 <h3 id="curriculum-vitae">Curriculum Vitae</h3>
 
-<p>This is my entire work history! I have combined and sorted multiple resumes from multiple companies over many years of work primarily in a technical consulting.</p>
+<p>This is a comprehensive work history compiled from multiple resumes and roles across many years of technical consulting.</p>
 
 <ul>
   <li><a href="./cv/Robert-P-Kranson-Curriculum-Vitae">Curriculum Vitae of Robert P Kranson</a></li>
@@ -104,24 +138,25 @@
 
 <h2 id="use-cases">Use Cases</h2>
 
-<p>A curriculum vitae (CV) is an academic diary that lists all of your education, experience, publications, certificates, awards, and publications. A resume is a single-page summary of your work experience and skills that are relevant to the job that you’re applying for.</p>
+<p>A curriculum vitae (CV) is a comprehensive record of education, experience, publications, certifications, and awards. A resume is a concise summary—typically one page—tailored to the job you are applying for.</p>
 
-<p>A resume should be created to target a specific job application. The format of the resume needs to conform to, or address limitations and expectations of common Application Tracking Systems (ATS) used by industry recruiters. This enables the profile created by the resume to be more fully available to matching algorithmns.</p>
+<p>Resumes should be targeted to each application and formatted with ATS (Applicant Tracking System) considerations in mind so recruiter tools can correctly parse and match your profile. Use clear headings, relevant keywords, and measurable outcomes.</p>
 
 <h3 id="tips">Tips</h3>
 
-<p>While one might create a resume which exceeds a page due to length of experience, some important points are important to remember:</p>
+<p>Key tips:</p>
 
 <ul>
-  <li>No more than 1000 words; some recruiter tools truncate to the first 1000 words</li>
-  <li>A Technical Resume; DevOps</li>
-  <li>A Functional Resume; Instructor/Trainer/Scrum or Agile facilitator</li>
+  <li>Keep most resumes under 1,000 words; some tools truncate after ~1,000 words.</li>
+  <li>For technical roles (DevOps): use reverse-chronological format, highlight technologies, platforms, and measurable outcomes.</li>
+  <li>For functional roles (Instructor, Trainer, Scrum/Agile facilitator): emphasize skills, certifications, and facilitation experience.</li>
+  <li>Use keywords from the job description and quantify results where possible (percentages, time savings, team sizes).</li>
 </ul>
 
-
+    </div>
   </div>
   <div class="footer">
-    &copy; 2025 Robert P. Kranson &mdash; IT Professional | Powered by Jekyll
+    &copy; 2025 Robert P. Kranson &mdash; IT Professional Portfolio
   </div>
 </body>
 </html>

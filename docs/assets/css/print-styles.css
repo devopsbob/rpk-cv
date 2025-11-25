@@ -1,0 +1,166 @@
+
+/* Print styles (plain CSS) */
+@media print {
+  /* Page settings */
+  @page {
+    margin: 0.5in;
+    size: letter;
+    @bottom-right {
+      content: "Page " counter(page);
+      font-size: 10pt;
+    }
+    @bottom-left {
+      content: "devopsbob.github.io/rpk-cv";
+      font-size: 10pt;
+      font-weight: bold;
+    }
+    @top-center {
+      content: "Robert P. Kranson";
+      font-size: 10pt;
+      border-bottom: 1pt solid black;
+      padding-bottom: 0.5em;
+    }
+    @top-left {
+      content: "devopsbob.github.io/rpk-cv";
+      font-size: 9pt;
+      color: #666;
+    }
+    @top-right {
+      content: attr(data-print-date);
+      font-size: 9pt;
+      color: #666;
+      text-align: right;
+    }
+  }
+
+  /* Hide unnecessary elements */
+  .header,
+  .footer,
+  .page-navigation,
+  .social-media-list,
+  .nav-toggle,
+  nav.primary-nav.nav-overlay,
+  .cookie-consent-banner,
+  .cookie-modal,
+  .print-info {
+    display: none !important;
+  }
+
+  /* Prevent section breaks */
+  .post-content,
+  .page-content,
+  .wrapper {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    box-shadow: none;
+    margin: 0;
+    padding: 0.5rem;
+    max-width: none;
+  }
+
+  /* Keep headings with their content */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    break-after: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Keep lists together */
+  ul, ol {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Keep list items with their parent */
+  li {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Keep other elements together */
+  table, tr, pre, code, blockquote,
+  .info-card, .highlight {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Ensure good contrast for print */
+  body,
+  .post-content,
+  .page-content {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Make links visible in print */
+  a {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* Don't show URLs for internal links */
+  a[href^="#"],
+  a[href^="/"] {
+    text-decoration: underline !important;
+  }
+
+  a[href^="#"]:after,
+  a[href^="/"]:after {
+    content: "";
+  }
+
+  /* Adjust font sizes for print (reduced for tighter layout) */
+  body { font-size: 10pt; line-height: 1.2; }
+  h1 { font-size: 14pt; }
+  h2 { font-size: 12pt; }
+  h3 { font-size: 10pt; }
+  h4 { font-size: 8pt; }
+  h5, h6 { font-size: 10pt; }
+
+  /* Tighten layout for print: remove container padding and visual chrome */
+  .container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Print date (top-right of page) */
+  .print-date {
+    display: block;
+    position: fixed;
+    top: 0.15in;
+    right: 0.5in;
+    font-size: 8pt;
+    color: #666;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tbody, .thead, .tr, .th, .td {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .cookie-btn,
+  .cookie-slider,
+  .cookie-slider:before,
+  a, button, .nav-toggle, .post-link,
+  .tag-link, .category-link, .post-tag,
+  .category-card, .tag-card {
+    transition: none !important;
+  }
+}

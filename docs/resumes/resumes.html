@@ -14,6 +14,11 @@
       margin: 0;
       padding: 0;
     }
+    .print-date {
+      display: none; /* hidden on screen, printed via print stylesheet */
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
     .header {
       background: #232f3e;
       color: #fff;
@@ -65,13 +70,43 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="/assets/css/print-styles.css" media="print" onload="this.media='all'" />
+  <script>
+    (function(){
+      function formatPrintDate(d) {
+        var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        var day = d.getDate();
+        if (day < 10) day = '0' + day;
+        var mon = months[d.getMonth()];
+        var year = d.getFullYear();
+        return day + '-' + mon + '-' + year;
+      }
+
+      window.onbeforeprint = function() {
+        var printed = "Printed on: " + formatPrintDate(new Date());
+        var el = document.getElementById('print-date');
+        if (el) el.textContent = printed;
+        try {
+          document.documentElement.setAttribute('data-print-date', printed);
+        } catch (e) {
+          /* ignore if setting attribute fails in some environments */
+        }
+      };
+    })();
+    window.onafterprint = function() {
+      try {
+        document.documentElement.removeAttribute('data-print-date');
+      } catch (e) {}
+    };
+  </script>
 </head>
 <body>
   <div class="header">
     <h1>IT Professional Portfolio</h1>
     <p>Curriculum Vitae & Professional Resumes for Robert (Bob) Kranson.</p>
   </div>
-  <div class="container">
+  <div class="main">
+    <div class="container">
     <h1 id="robert-bob-kranson-resumes">Robert (Bob) Kranson Resumes</h1>
 <p><strong>Sterling Heights, Michigan, 48310</strong><br />
 <strong><a href="mailto:devopsbob@outlook.com">mailto:devopsbob@outlook.com</a></strong><br /></p>
@@ -95,9 +130,10 @@
 
 <hr />
 
+    </div>
   </div>
   <div class="footer">
-    &copy; 2025 Robert P. Kranson &mdash; IT Professional | Powered by Jekyll
+    &copy; 2025 Robert P. Kranson &mdash; IT Professional Portfolio
   </div>
 </body>
 </html>
