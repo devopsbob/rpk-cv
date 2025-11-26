@@ -1,118 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculum Vitae and Resumes of Robert (Bob Kranson)</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', Arial, sans-serif;
-      background: #f4f6f8;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-    .print-date {
-      display: none; /* hidden on screen, printed via print stylesheet */
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-    .header {
-      background: #232f3e;
-      color: #fff;
-      padding: 32px 0 16px 0;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-    .header p {
-      margin: 8px 0 0 0;
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: #b3c2d2;
-    }
-    .container {
-      max-width: 900px;
-      margin: 32px auto;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-      padding: 32px;
-    }
-    .footer {
-      background: #232f3e;
-      color: #b3c2d2;
-      text-align: center;
-      padding: 16px 0;
-      font-size: 0.95rem;
-      margin-top: 48px;
-    }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      .container {
-        padding: 16px;
-      }
-      .header h1 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+  <meta name="cache-version" content="20251126170502" />
   
     <link rel="canonical" href="https://devopsbob.github.io/rpk-cv" />
-    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/print-styles.css" media="print" onload="this.media='all'" />
-    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png" />
-    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico" />
+    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251126170502" />
+    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251126170502" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20251126170502" />
+    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20251126170502">
+    <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es6.min.js?v=20251126170502" async crossorigin="anonymous"></script>
   
-
+  <noscript>
+    <div class="legacy-browser-notice" role="alert">
+      <strong>No Script Support Available</strong>
+      <span class="notice-detail">Your browser does not support modern features required.</span>
+    </div>
+  </noscript>
   <script>
-    (function(){
-      function formatPrintDate(d) {
-        var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-        var day = d.getDate();
-        if (day < 10) day = '0' + day;
-        var mon = months[d.getMonth()];
-        var year = d.getFullYear();
-        return day + '-' + mon + '-' + year;
-      }
+    // Enhanced module support detection and navigation management
+    (function() {
+      'use strict';
 
-      window.onbeforeprint = function() {
-        var printed = "Printed on: " + formatPrintDate(new Date());
-        var el = document.getElementById('print-date');
-        if (el) el.textContent = printed;
-        try {
-          document.documentElement.setAttribute('data-print-date', printed);
-        } catch (e) {
-          /* ignore if setting attribute fails in some environments */
-        }
-      };
+      var html = document.documentElement;
+      html.setAttribute('lang', "en");
+      var supportsModules = 'noModule' in HTMLScriptElement.prototype;
+
+      // Only initialize advanced navigation for modern browsers
+      if (!supportsModules) {
+        html.classList.add('no-modules');
+        // Show legacy browser notice for commerce functionality
+        document.write('<div class="legacy-browser-notice" role="alert"><strong>No Module Support Available</strong><span class="notice-detail">Your browser does not support modern features required.</span></div>');
+        return; // Exit early for legacy browsers
+      }
     })();
-    window.onafterprint = function() {
-      try {
-        document.documentElement.removeAttribute('data-print-date');
-      } catch (e) {}
-    };
   </script>
 </head>
 <body>
-  <div class="header">
+  <header>
     <h1>IT Professional Portfolio</h1>
     <p>Curriculum Vitae & Professional Resumes for Robert (Bob) Kranson.</p>
-  </div>
-  <div class="main">
+  </header>
+  <main>
     <div class="container">
     <p>Welcome to my curriculum vitae hub. These pages intentionally present minimal public information to encourage serious inquiries and focused discussions about business outcomes.</p>
 
@@ -161,9 +92,9 @@
 </ul>
 
     </div>
-  </div>
-  <div class="footer">
+  </main>
+  <footer>
     &copy; 2025 Robert P. Kranson &mdash; IT Professional Portfolio
-  </div>
+  </footer>
 </body>
 </html>

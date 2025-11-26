@@ -34,8 +34,8 @@
   }
 
   /* Hide unnecessary elements */
-  .header,
-  .footer,
+  header,
+  footer,
   .page-navigation,
   .social-media-list,
   .nav-toggle,
