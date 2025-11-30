@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robert (Bob) Kranson Resumes</title>
-  <meta name="cache-version" content="20251126201807" />
+  <meta name="cache-version" content="20251130164526" />
   
     <link rel="canonical" href="https://devopsbob.github.io/rpk-cv" />
-    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251126201807" />
-    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251126201807" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20251126201807" />
-    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20251126201807">
-    <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es6.min.js?v=20251126201807" async crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251130164526" />
+    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251130164526" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20251130164526" />
+    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20251130164526">
   
   <noscript>
     <div class="legacy-browser-notice" role="alert">
@@ -37,6 +36,42 @@
       }
     })();
   </script>
+  <!-- Attempt to load and run ES11 feature detection (syntax-only check) -->
+  
+  
+  <script type="module">
+    (async () => {
+
+      var supportsEcmascript11 = false;
+      const html = document.documentElement;
+      try {
+        const mod = await import('/assets/js/rpk-cv-es11.min.js');
+        if (mod && typeof mod.testES11Features === 'function') {
+          try { 
+            mod.testES11Features(); 
+            supportsEcmascript11 = true;
+          } catch (e) { console.error('ES11 test failed:', e); }
+        } else if (typeof window.testES11Features === 'function') {
+          try { window.testES11Features();
+            supportsEcmascript11 = true;
+           } catch (e) { console.error('ES11 test failed:', e); }
+        } else {
+          console.debug('ES11 test module loaded but `testES11Features` not found.');
+        }
+      } catch (err) {
+        console.debug('ES11 test module not present or failed to import:', err);
+      }
+      if (!supportsEcmascript11) {
+        html.classList.add('no-ES2020');
+        // Show legacy browser notice for commerce functionality
+        document.write('<div class="legacy-browser-notice" role="alert"><strong>No ES2020 Support Available</strong><span class="notice-detail">Your browser does not support modern features required.</span></div>');
+        return; // Exit early for legacy browsers
+      }
+    })();
+  </script>
+  
+    <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es11.min.js?v=20251130164526" async crossorigin="anonymous"></script>
+  
 </head>
 <body>
   <header>
