@@ -39,6 +39,35 @@ header p {
     color: #b3c2d2;
 }
 
+/* Logo / branding */
+.site-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.site-brand .brand-link {
+    display: inline-block;
+    line-height: 0;
+}
+.site-brand img.logo {
+    width: 56px;
+    height: 56px;
+    display: block;
+    border-radius: 8px;
+    background: #111827; /* fallback */
+}
+.site-brand .brand-text h1 {
+    margin: 0;
+    font-size: 2.1rem;
+}
+.site-brand .brand-text p {
+    margin: 4px 0 0 0;
+}
+
 .container {
     max-width: 900px;
     margin: 32px auto;
@@ -69,6 +98,11 @@ a:hover {
 @media (max-width: 600px) {
     .container {
         padding: 16px;
+    }
+    .site-brand {
+        gap: 10px;
+        flex-direction: column;
+        padding: 8px 12px;
     }
 
     header h1 {
