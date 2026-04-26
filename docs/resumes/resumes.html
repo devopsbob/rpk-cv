@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robert (Bob) Kranson Resumes</title>
-  <meta name="cache-version" content="20251219110300" />
+  <meta name="cache-version" content="20260426194827" />
   
     <link rel="canonical" href="https://devopsbob.github.io/rpk-cv" />
-    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251219110300" />
-    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251219110300" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20251219110300" />
-    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20251219110300">
+    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260426194827" />
+    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260426194827" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20260426194827" />
+    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20260426194827">
   
   <noscript>
     <div class="legacy-browser-notice" role="alert">
@@ -36,42 +36,40 @@
       }
     })();
   </script>
-  <!-- Attempt to load and run ES11 feature detection (syntax-only check) -->
-  
-  
+  <!-- Attempt to load and run ES2022 feature detection (syntax-only check) -->
   
   <script type="module">
     (async () => {
 
-      var supportsEcmascript11 = false;
+      var supportsEcmascript2022 = false;
       const html = document.documentElement;
       try {
-        const mod = await import('https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es11.min.js');
-        if (mod && typeof mod.testES11Features === 'function') {
+        const mod = await import('/assets/js/rpk-cv-es2022.min.js');
+        if (mod && typeof mod.testES2022Features === 'function') {
           try { 
-            mod.testES11Features(); 
-            supportsEcmascript11 = true;
-          } catch (e) { console.error('ES11 test failed:', e); }
-        } else if (typeof window.testES11Features === 'function') {
-          try { window.testES11Features();
-            supportsEcmascript11 = true;
-           } catch (e) { console.error('ES11 test failed:', e); }
+            mod.testES2022Features(); 
+            supportsEcmascript2022 = true;
+          } catch (e) { console.error('ES2022 test failed:', e); }
+        } else if (typeof window.testES2022Features === 'function') {
+          try { window.testES2022Features();
+            supportsEcmascript2022 = true;
+           } catch (e) { console.error('ES2022 test failed:', e); }
         } else {
-          console.debug('ES11 test module loaded but `testES11Features` not found.');
+          console.debug('ES2022 test module loaded but `testES2022Features` not found.');
         }
       } catch (err) {
-        console.debug('ES11 test module not present or failed to import:', err);
+        console.debug('ES2022 test module not present or failed to import:', err);
       }
-      if (!supportsEcmascript11) {
-        html.classList.add('no-ES2020');
+      if (!supportsEcmascript2022) {
+        html.classList.add('no-ES2022');
         // Show legacy browser notice for commerce functionality
-        document.write('<div class="legacy-browser-notice" role="alert"><strong>No ES2020 Support Available</strong><span class="notice-detail">Your browser does not support modern features required.</span></div>');
+        document.write('<div class="legacy-browser-notice" role="alert"><strong>No ES2022 Support Available</strong><span class="notice-detail">Your browser does not support modern features required.</span></div>');
         return; // Exit early for legacy browsers
       }
     })();
   </script>
   
-    <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es11.min.js?v=20251219110300" async crossorigin="anonymous"></script>
+    <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260426194827" async crossorigin="anonymous"></script>
   
   <script type="application/ld+json"> 
     {
@@ -488,7 +486,7 @@
   <header>
     <div class="site-brand">
       <a class="brand-link" href="https://devopsbob.github.io/rpk-cv/">
-        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_180x180.png?v=20251219110300" alt="IT Professional Portfolio logo" />
+        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_180x180.png?v=20260426194827" alt="IT Professional Portfolio logo" />
       </a>
       <div class="brand-text">
         <h1>IT Professional Portfolio</h1>
@@ -499,33 +497,38 @@
   <main>
     <div class="container">
     <h1 id="robert-bob-kranson-resumes">Robert (Bob) Kranson Resumes</h1>
+<p>Generalist technology and operations resume set tailored for different roles and hiring contexts.</p>
+
 <p><strong>Sterling Heights, Michigan, 48310</strong><br />
-<strong><a href="mailto:devopsbob@outlook.com">mailto:devopsbob@outlook.com</a></strong><br /></p>
+<strong><a href="mailto:devopsbob@outlook.com">devopsbob@outlook.com</a></strong><br />
+<strong><a href="https://www.linkedin.com/in/bobkranson">LinkedIn</a></strong> | <strong><a href="https://devopsbob.github.io/rpk-cv">Portfolio</a></strong><br /></p>
+
+<h2 id="resume-options">Resume Options</h2>
 
 <ul>
-  <li><a href="./General_Laborer_Resume_2025">General Laborer</a></li>
-  <li><a href="./2025/Devops_Robert_Kranson_Resume">DevOps Resume</a></li>
-  <li><a href="./2025/Robert_Kranson_Resume_1pg_2025">1-Page Resume</a></li>
-  <li><a href="./2025/Robert_Kranson_Resume_2025">10-Page Resume</a></li>
+  <li><a href="./General_Laborer_Resume_2026">Operations and Technology Resume (2026)</a>: Highlights hands-on delivery, operations coordination, AI tool fluency, and compliance-readiness support.</li>
+  <li><a href="./2025/Devops_Robert_Kranson_Resume">DevOps Resume</a>: Focused version for DevOps, platform engineering, and release pipeline roles.</li>
+  <li><a href="./2025/Robert_Kranson_Resume_1pg_2025">Generalist Resume (1 Page)</a>: Concise summary for recruiter screens and quick submissions.</li>
+  <li><a href="./2025/Robert_Kranson_Resume_2025">Generalist Resume (Full)</a>: Detailed multi-role experience with broader technical and leadership context.</li>
 </ul>
 
 <h2 id="get-a-pdf">Get a PDF</h2>
 
-<p>PDF is available as a print option in most modern systems.</p>
+<p>Use your browser print feature to export any resume page to PDF.</p>
 
 <ol>
-  <li>Select File &gt; Print, or CTL/CMD+P</li>
-  <li>Select &gt; Print to PDF</li>
-  <li>Ensure the page layout is set to portrait and not landscape</li>
-  <li>Turn on Headers and Footers in the print dialog so it has date and title info on every page</li>
+  <li>Select <code class="language-plaintext highlighter-rouge">File &gt; Print</code> (or <code class="language-plaintext highlighter-rouge">Ctrl/Cmd + P</code>).</li>
+  <li>Set destination to <code class="language-plaintext highlighter-rouge">Print to PDF</code>.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">Portrait</code> layout.</li>
+  <li>Enable <code class="language-plaintext highlighter-rouge">Headers and Footers</code> to include page title and date metadata.</li>
 </ol>
 
-<hr />
+<p>For a role-targeted version, contact me and I can provide a tailored resume edition.</p>
 
     </div>
   </main>
   <footer>
-    &copy; 2025 Robert P. Kranson &mdash; IT Professional Portfolio
+    &copy; 2026 Robert P. Kranson &mdash; IT Professional Portfolio
   </footer>
 </body>
 </html>

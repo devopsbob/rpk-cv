@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculum Vitae and Resumes of Robert (Bob Kranson)</title>
-  <meta name="cache-version" content="20251219110300" />
+  <meta name="cache-version" content="20260426194827" />
   
     <link rel="canonical" href="https://devopsbob.github.io/rpk-cv" />
-    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251219110300" />
-    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251219110300" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20251219110300" />
-    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20251219110300">
+    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260426194827" />
+    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260426194827" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20260426194827" />
+    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20260426194827">
   
   <noscript>
     <div class="legacy-browser-notice" role="alert">
@@ -36,42 +36,40 @@
       }
     })();
   </script>
-  <!-- Attempt to load and run ES11 feature detection (syntax-only check) -->
-  
-  
+  <!-- Attempt to load and run ES2022 feature detection (syntax-only check) -->
   
   <script type="module">
     (async () => {
 
-      var supportsEcmascript11 = false;
+      var supportsEcmascript2022 = false;
       const html = document.documentElement;
       try {
-        const mod = await import('https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es11.min.js');
-        if (mod && typeof mod.testES11Features === 'function') {
+        const mod = await import('/assets/js/rpk-cv-es2022.min.js');
+        if (mod && typeof mod.testES2022Features === 'function') {
           try { 
-            mod.testES11Features(); 
-            supportsEcmascript11 = true;
-          } catch (e) { console.error('ES11 test failed:', e); }
-        } else if (typeof window.testES11Features === 'function') {
-          try { window.testES11Features();
-            supportsEcmascript11 = true;
-           } catch (e) { console.error('ES11 test failed:', e); }
+            mod.testES2022Features(); 
+            supportsEcmascript2022 = true;
+          } catch (e) { console.error('ES2022 test failed:', e); }
+        } else if (typeof window.testES2022Features === 'function') {
+          try { window.testES2022Features();
+            supportsEcmascript2022 = true;
+           } catch (e) { console.error('ES2022 test failed:', e); }
         } else {
-          console.debug('ES11 test module loaded but `testES11Features` not found.');
+          console.debug('ES2022 test module loaded but `testES2022Features` not found.');
         }
       } catch (err) {
-        console.debug('ES11 test module not present or failed to import:', err);
+        console.debug('ES2022 test module not present or failed to import:', err);
       }
-      if (!supportsEcmascript11) {
-        html.classList.add('no-ES2020');
+      if (!supportsEcmascript2022) {
+        html.classList.add('no-ES2022');
         // Show legacy browser notice for commerce functionality
-        document.write('<div class="legacy-browser-notice" role="alert"><strong>No ES2020 Support Available</strong><span class="notice-detail">Your browser does not support modern features required.</span></div>');
+        document.write('<div class="legacy-browser-notice" role="alert"><strong>No ES2022 Support Available</strong><span class="notice-detail">Your browser does not support modern features required.</span></div>');
         return; // Exit early for legacy browsers
       }
     })();
   </script>
   
-    <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es11.min.js?v=20251219110300" async crossorigin="anonymous"></script>
+    <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260426194827" async crossorigin="anonymous"></script>
   
   <script type="application/ld+json"> 
     {
@@ -488,7 +486,7 @@
   <header>
     <div class="site-brand">
       <a class="brand-link" href="https://devopsbob.github.io/rpk-cv/">
-        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_180x180.png?v=20251219110300" alt="IT Professional Portfolio logo" />
+        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_180x180.png?v=20260426194827" alt="IT Professional Portfolio logo" />
       </a>
       <div class="brand-text">
         <h1>IT Professional Portfolio</h1>
@@ -502,7 +500,7 @@
 
 <p>I design and deploy infrastructure and application build systems with a strong focus on secure, best‑of‑breed configurations. I have applied these skills across industries as both an implementer and a vendor support technician, and I have built a variety of static and dynamic websites over the years.</p>
 
-<p>This site requires a browser which supports JavaScript ES2020 also known as ECMAScript-11 or ES11. If the browser does not meet this minimum you get a one-line alert message instead of this page! Call it “Internet Ageism”.</p>
+<p>This site requires a browser which supports JavaScript ES2022 also known as ECMAScript-2022 or ES2022. If the browser does not meet this minimum you get a one-line alert message instead of this page! Call it “Internet Ageism”.</p>
 
 <p>(This site is hosted at: <a href="https://devopsbob.github.io/rpk-cv">https://devopsbob.github.io/rpk-cv</a>)</p>
 
@@ -512,7 +510,7 @@
 <strong><a href="mailto:devopsbob@outlook.com">devopsbob@outlook.com</a></strong></p>
 
 <ul>
-  <li><a href="./resumes/General_Laborer_Resume_2025">General Laborer Resume</a></li>
+  <li><a href="./resumes/General_Laborer_Resume_2026">General Laborer Resume</a></li>
 </ul>
 
 <h2 id="protected-links">Protected Links</h2>
@@ -553,7 +551,7 @@
     </div>
   </main>
   <footer>
-    &copy; 2025 Robert P. Kranson &mdash; IT Professional Portfolio
+    &copy; 2026 Robert P. Kranson &mdash; IT Professional Portfolio
   </footer>
 </body>
 </html>

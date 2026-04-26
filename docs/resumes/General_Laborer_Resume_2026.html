@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
-  <meta name="cache-version" content="20251219110300" />
+  <meta name="cache-version" content="20260426194827" />
   
     <link rel="canonical" href="https://devopsbob.github.io/rpk-cv" />
-    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251219110300" />
-    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20251219110300" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20251219110300" />
-    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20251219110300">
+    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260426194827" />
+    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260426194827" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20260426194827" />
+    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20260426194827">
   
   <noscript>
     <div class="legacy-browser-notice" role="alert">
@@ -36,42 +36,40 @@
       }
     })();
   </script>
-  <!-- Attempt to load and run ES11 feature detection (syntax-only check) -->
-  
-  
+  <!-- Attempt to load and run ES2022 feature detection (syntax-only check) -->
   
   <script type="module">
     (async () => {
 
-      var supportsEcmascript11 = false;
+      var supportsEcmascript2022 = false;
       const html = document.documentElement;
       try {
-        const mod = await import('https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es11.min.js');
-        if (mod && typeof mod.testES11Features === 'function') {
+        const mod = await import('/assets/js/rpk-cv-es2022.min.js');
+        if (mod && typeof mod.testES2022Features === 'function') {
           try { 
-            mod.testES11Features(); 
-            supportsEcmascript11 = true;
-          } catch (e) { console.error('ES11 test failed:', e); }
-        } else if (typeof window.testES11Features === 'function') {
-          try { window.testES11Features();
-            supportsEcmascript11 = true;
-           } catch (e) { console.error('ES11 test failed:', e); }
+            mod.testES2022Features(); 
+            supportsEcmascript2022 = true;
+          } catch (e) { console.error('ES2022 test failed:', e); }
+        } else if (typeof window.testES2022Features === 'function') {
+          try { window.testES2022Features();
+            supportsEcmascript2022 = true;
+           } catch (e) { console.error('ES2022 test failed:', e); }
         } else {
-          console.debug('ES11 test module loaded but `testES11Features` not found.');
+          console.debug('ES2022 test module loaded but `testES2022Features` not found.');
         }
       } catch (err) {
-        console.debug('ES11 test module not present or failed to import:', err);
+        console.debug('ES2022 test module not present or failed to import:', err);
       }
-      if (!supportsEcmascript11) {
-        html.classList.add('no-ES2020');
+      if (!supportsEcmascript2022) {
+        html.classList.add('no-ES2022');
         // Show legacy browser notice for commerce functionality
-        document.write('<div class="legacy-browser-notice" role="alert"><strong>No ES2020 Support Available</strong><span class="notice-detail">Your browser does not support modern features required.</span></div>');
+        document.write('<div class="legacy-browser-notice" role="alert"><strong>No ES2022 Support Available</strong><span class="notice-detail">Your browser does not support modern features required.</span></div>');
         return; // Exit early for legacy browsers
       }
     })();
   </script>
   
-    <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es11.min.js?v=20251219110300" async crossorigin="anonymous"></script>
+    <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260426194827" async crossorigin="anonymous"></script>
   
   <script type="application/ld+json"> 
     {
@@ -488,7 +486,7 @@
   <header>
     <div class="site-brand">
       <a class="brand-link" href="https://devopsbob.github.io/rpk-cv/">
-        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_180x180.png?v=20251219110300" alt="IT Professional Portfolio logo" />
+        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_180x180.png?v=20260426194827" alt="IT Professional Portfolio logo" />
       </a>
       <div class="brand-text">
         <h1>IT Professional Portfolio</h1>
@@ -504,43 +502,46 @@
 
 <h2 id="professional-summary">Professional Summary</h2>
 
-<p>Dedicated and hardworking individual with a strong background in various labor roles. Proven ability to adapt to different work environments and collaborate effectively with team members. Committed to delivering high-quality work while ensuring digital security, safety and efficiency on the job site.</p>
+<p>Versatile operations and technology professional with experience leading small initiatives, coordinating stakeholders, and executing hands-on delivery across infrastructure, web platforms, and support services. Known for translating goals into organized plans, keeping teams aligned, and stepping in directly to build, troubleshoot, and improve systems. Conversant with modern AI tools and usage mechanics for research, automation, and productivity. Brings a practical, service-oriented approach that balances planning, safety, quality, and execution.</p>
 
 <h2 id="skills">Skills</h2>
 
 <ul>
-  <li><strong>Physical Abilities</strong>: Strong stamina and good physical strength, capable of lifting objects and performing manual labor tasks.</li>
-  <li><strong>Equipment Operation</strong>: Experience operating various tools and machinery, including Docker, Podman, Linux, NodeJS, and Maven.</li>
-  <li><strong>Safety Compliance</strong>: Knowledge of security protocols and safety regulations to maintain a safe working environment.</li>
-  <li><strong>Team Collaboration</strong>: Excellent communication skills and ability to work well in a team-oriented environment.</li>
-  <li><strong>Problem Solving</strong>: Quick thinker with the ability to troubleshoot and resolve issues as they arise on the job.</li>
+  <li><strong>Leadership and Coordination</strong>: Work planning, prioritization, stakeholder communication, and cross-functional collaboration.</li>
+  <li><strong>Operations Management</strong>: Process improvement, environment readiness, documentation, onboarding support, and delivery follow-through.</li>
+  <li><strong>Hands-On Technical Execution</strong>: Linux administration, scripting, container tooling (Docker/Podman), Node.js ecosystem, and CI/CD support.</li>
+  <li><strong>AI Tool Fluency</strong>: Familiar with practical usage mechanics for modern AI tools, including prompt design, workflow integration, and responsible use in day-to-day delivery.</li>
+  <li><strong>Quality and Risk Awareness</strong>: Security-minded delivery, validation checks, and disciplined change execution.</li>
+  <li><strong>Security and Compliance Readiness</strong>: Familiar with user administration and security concepts that support SOC 2 and PCI audit readiness.</li>
+  <li><strong>Client and Team Support</strong>: Clear communication, practical training, and problem-solving under changing requirements.</li>
 </ul>
 
 <h2 id="work-experience">Work Experience</h2>
 
-<p><strong>Business Owner</strong> : <a href="https://www.mijug.net/">Kranson Enterprises - MIJUG.NET</a> : <strong>March 2025 - Present</strong></p>
+<p><strong>Business Owner</strong> : <a href="https://www.mijug.net/">Kranson Enterprises - MIJUG.NET</a> : <strong>Jun 2025 – Present</strong></p>
 
 <ul>
-  <li>Delivered various software projects: <a href="https://devopsbob.github.io/rpk-cv/">devopsbob.github.io</a>, <a href="https://www.mijug.net">mijug.net</a>, <a href="https://thrivealternativemedicine.com">Thrive Alternative Medicine</a>.</li>
-  <li>Developed in-home solutions for Artificial Intelligence model hosting using Ollama, Continue, rules and instructions.</li>
-  <li>Created and delivered seminar courses - Refurbish Non-Window 11 Compatible Boxes to Linux</li>
+  <li>Own and manage consulting engagements from discovery through delivery, including scope alignment, prioritization, and client communication.</li>
+  <li>Deliver web and technology solutions such as <a href="https://devopsbob.github.io/rpk-cv/">devopsbob.github.io</a>, <a href="https://www.mijug.net">mijug.net</a>, and <a href="https://thrivealternativemedicine.com">Thrive Alternative Medicine</a>.</li>
+  <li>Build and maintain practical technical implementations, including local AI model hosting workflows and modern web deployment pipelines.</li>
+  <li>Develop and deliver training sessions, including Linux refurbishment workshops for systems not eligible for Windows 11.</li>
 </ul>
 
-<p><strong>Consultant</strong> : <a href="#">Prior Company</a> : <strong>April 2016 - February 2025</strong></p>
+<p><strong>Consultant</strong> : <a href="#">Prior Company</a> : <strong>Apr 2016 – Feb 2025</strong></p>
 
 <ul>
-  <li>Assisted in various software projects, including hardware and network connectivity.</li>
-  <li>Performed tasks such as diagramming, provisioning, administration, scripting and programming to support delivery efforts.</li>
-  <li>Maintained a clean, organized cloud and desktop environment to ensure security, safety and efficiency.</li>
+  <li>Supported delivery across software, infrastructure, and connectivity initiatives while coordinating with business and technical teams.</li>
+  <li>Performed hands-on work including diagramming, provisioning, administration, scripting, troubleshooting, and implementation support.</li>
+  <li>Improved operational consistency through organized environments, clearer documentation, and dependable execution practices.</li>
 </ul>
 
-<p><strong>Consulting Associate</strong> : <a href="#">Prior to Prior</a> : <strong>Pre 2016</strong></p>
+<p><strong>Consulting Associate</strong> : <a href="#">Prior to Prior</a> : <strong>Before 2016</strong></p>
 
 <ul>
-  <li>Managed inventory and assisted in the loading and unloading of digital goods.</li>
-  <li>Operated mainframe, AS400, Sun/IBM/HP Unix, and Linux to move materials safely and efficiently.</li>
-  <li>Collaborated with team members to meet daily goals and work deliverables.</li>
-  <li>Created and delivered technical and user training classes.</li>
+  <li>Supported operations across inventory, fulfillment, and platform administration with attention to quality and reliability.</li>
+  <li>Operated enterprise environments (mainframe, AS400, Sun/IBM/HP Unix, Linux) to process and move workload safely and efficiently.</li>
+  <li>Collaborated with teams to meet daily targets and keep delivery commitments on track.</li>
+  <li>Created and delivered technical and end-user training to improve adoption and operational effectiveness.</li>
 </ul>
 
 <h2 id="education">Education</h2>
@@ -556,7 +557,7 @@
     </div>
   </main>
   <footer>
-    &copy; 2025 Robert P. Kranson &mdash; IT Professional Portfolio
+    &copy; 2026 Robert P. Kranson &mdash; IT Professional Portfolio
   </footer>
 </body>
 </html>
