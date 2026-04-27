@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
-  <meta name="cache-version" content="20260426200958" />
+  <meta name="cache-version" content="20260426203838" />
   
     <link rel="canonical" href="https://devopsbob.github.io/rpk-cv" />
-    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260426200958" />
-    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260426200958" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20260426200958" />
-    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20260426200958">
+    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260426203838" />
+    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260426203838" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20260426203838" />
+    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20260426203838">
   
   <noscript>
     <div class="legacy-browser-notice" role="alert">
@@ -45,14 +45,14 @@
       var supportsEcmascript2022 = false;
       const html = document.documentElement;
       try {
-        const mod = await import('https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260426200958');
+        const mod = await import('https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260426203838');
         if (mod && typeof mod.testES2022Features === 'function') {
           try { 
-            mod.testES2022Features(); 
-            supportsEcmascript2022 = true;
-          } catch (e) { console.error('ES2022 test failed:', e); }
-        } else if (typeof window.testES2022Features === 'function') {
-          try { window.testES2022Features();
+            await mod.testES2022Features(); 
+            supportsEcmascript2022 = true;
+          } catch (e) { console.error('ES2022 test failed:', e); }
+        } else if (typeof window.testES2022Features === 'function') {
+          try { await window.testES2022Features();
             supportsEcmascript2022 = true;
            } catch (e) { console.error('ES2022 test failed:', e); }
         } else {
@@ -64,12 +64,31 @@
       if (!supportsEcmascript2022) {
         html.classList.add('no-ES2022');
         // Show legacy browser notice for commerce functionality
-        document.write('<div class="legacy-browser-notice" role="alert"><strong>No ES2022 Support Available</strong><span class="notice-detail">Your browser does not support modern features required.</span></div>');
+        const legacyBrowserNotice = document.createElement('div');
+        legacyBrowserNotice.className = 'legacy-browser-notice';
+        legacyBrowserNotice.setAttribute('role', 'alert');
+        const noticeStrong = document.createElement('strong');
+        noticeStrong.textContent = 'No ES2022 Support Available';
+        const noticeDetail = document.createElement('span');
+        noticeDetail.className = 'notice-detail';
+        noticeDetail.textContent = 'Your browser does not support modern features required.';
+        legacyBrowserNotice.appendChild(noticeStrong);
+        legacyBrowserNotice.appendChild(noticeDetail);
+
+        const insertLegacyBrowserNotice = () => {
+          document.body.prepend(legacyBrowserNotice);
+        };
+
+        if (document.body) {
+          insertLegacyBrowserNotice();
+        } else {
+          document.addEventListener('DOMContentLoaded', insertLegacyBrowserNotice, { once: true });
+        }
         return; // Exit early for legacy browsers
       }
     })();
   </script>
-  <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260426200958" async crossorigin="anonymous"></script>
+  <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260426203838" async crossorigin="anonymous"></script>
   <script type="application/ld+json"> 
     {
   "@context": {
@@ -485,7 +504,7 @@
   <header>
     <div class="site-brand">
       <a class="brand-link" href="https://devopsbob.github.io/rpk-cv/">
-        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_180x180.png?v=20260426200958" alt="IT Professional Portfolio logo" />
+        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_180x180.png?v=20260426203838" alt="IT Professional Portfolio logo" />
       </a>
       <div class="brand-text">
         <h1>IT Professional Portfolio</h1>
