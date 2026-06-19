@@ -4,13 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robert (Bob) Kranson Resumes</title>
-  <meta name="cache-version" content="20260608174450" />
+  <meta name="description" content="Role-targeted resume set for Robert (Bob) Kranson — operations, DevOps, platform engineering, and generalist technology editions." />
+  <meta name="author" content="Robert P. Kranson" />
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Robert (Bob) Kranson Resumes" />
+  <meta property="og:description" content="Role-targeted resume set for Robert (Bob) Kranson — operations, DevOps, platform engineering, and generalist technology editions." />
+  <meta property="og:image" content="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_512x512.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:site_name" content="IT Professional Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Robert (Bob) Kranson Resumes" />
+  <meta name="twitter:description" content="Role-targeted resume set for Robert (Bob) Kranson — operations, DevOps, platform engineering, and generalist technology editions." />
+  <meta name="twitter:image" content="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_512x512.png" />
+  <meta name="cache-version" content="20260618235915" />
   
-    <link rel="canonical" href="https://devopsbob.github.io/rpk-cv" />
-    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260608174450" />
-    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260608174450" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20260608174450" />
-    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20260608174450">
+    <link rel="canonical" href="https://devopsbob.github.io/rpk-cv/resumes/resumes.html" />
+    <link rel="icon" type="image/svg+xml" href="https://devopsbob.github.io/rpk-cv/assets/favicon.svg?v=20260618235915" />
+    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_512x512.png?v=20260618235915" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20260618235915" />
+    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20260618235915">
   
   <noscript>
     <div class="legacy-browser-notice" role="alert">
@@ -30,7 +44,7 @@
       // Only initialize advanced navigation for modern browsers
       if (!supportsModules) {
         html.classList.add('no-modules');
-        // Show legacy browser notice for commerce functionality
+        // Show legacy browser notice when ES modules are unsupported
         document.write('<div class="legacy-browser-notice" role="alert"><strong>No Module Support Available</strong><span class="notice-detail">Your browser does not support modern features required.</span></div>');
         return; // Exit early for legacy browsers
       }
@@ -45,13 +59,13 @@
       var supportsEcmascript2022 = false;
       const html = document.documentElement;
       try {
-        const mod = await import('https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260608174450');
+        const mod = await import('https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260618235915');
         if (mod && typeof mod.testES2022Features === 'function') {
           try { 
             await mod.testES2022Features(); 
-            supportsEcmascript2022 = true;
-          } catch (e) { console.error('ES2022 test failed:', e); }
-        } else if (typeof window.testES2022Features === 'function') {
+            supportsEcmascript2022 = true;
+          } catch (e) { console.error('ES2022 test failed:', e); }
+        } else if (typeof window.testES2022Features === 'function') {
           try { await window.testES2022Features();
             supportsEcmascript2022 = true;
            } catch (e) { console.error('ES2022 test failed:', e); }
@@ -63,7 +77,7 @@
       }
       if (!supportsEcmascript2022) {
         html.classList.add('no-ES2022');
-        // Show legacy browser notice for commerce functionality
+        // Show legacy browser notice when ES2022 features are unsupported
         const legacyBrowserNotice = document.createElement('div');
         legacyBrowserNotice.className = 'legacy-browser-notice';
         legacyBrowserNotice.setAttribute('role', 'alert');
@@ -88,7 +102,7 @@
       }
     })();
   </script>
-  <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260608174450" async crossorigin="anonymous"></script>
+  <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260618235915" async crossorigin="anonymous"></script>
   <script type="application/ld+json"> 
     {
   "@context": {
@@ -501,35 +515,40 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header>
     <div class="site-brand">
       <a class="brand-link" href="https://devopsbob.github.io/rpk-cv/">
-        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_180x180.png?v=20260608174450" alt="IT Professional Portfolio logo" />
+        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo.svg?v=20260618235915" width="56" height="56" alt="IT Professional Portfolio logo" />
       </a>
       <div class="brand-text">
-        <h1>IT Professional Portfolio</h1>
+        <p class="site-title">IT Professional Portfolio</p>
         <p>Curriculum Vitae & Professional Resumes for Robert (Bob) Kranson.</p>
       </div>
     </div>
   </header>
-  <main>
+  <main id="main">
     <div class="container">
     <h1 id="robert-bob-kranson-resumes">Robert (Bob) Kranson Resumes</h1>
 <p>Generalist technology and operations resume set tailored for different roles and hiring contexts.</p>
 
-<p><strong>Sterling Heights, Michigan, 48310</strong><br />
+<address>
+  <p><strong>Sterling Heights, Michigan, 48310</strong><br />
 <strong><a href="mailto:devopsbob@outlook.com">devopsbob@outlook.com</a></strong><br />
-<strong><a href="https://www.linkedin.com/in/bobkranson">LinkedIn</a></strong> | <strong><a href="https://devopsbob.github.io/rpk-cv">Portfolio</a></strong><br /></p>
+<strong><a href="https://www.linkedin.com/in/bobkranson">LinkedIn</a></strong> | <strong><a href="https://devopsbob.github.io/rpk-cv">Portfolio</a></strong></p>
+</address>
 
 <h2 id="resume-options">Resume Options</h2>
 
-<ul>
-  <li><a href="./General_Laborer_Resume_2026">Operations and Technology Resume (2026)</a>: Highlights hands-on delivery, operations coordination, AI tool fluency, and compliance-readiness support.</li>
-  <li><a href="./2026/AI_Uniface10_Manufacturing_Robert_Kranson_Resume">Uniface 10 and AI Integration Resume</a>: Inside Automation 2026 Artificial Intelligence.</li>
-  <li><a href="./2025/Devops_Robert_Kranson_Resume">DevOps Resume</a>: Focused version for DevOps, platform engineering, and release pipeline roles.</li>
-  <li><a href="./2025/Robert_Kranson_Resume_1pg_2025">Generalist Resume (1 Page)</a>: Concise summary for recruiter screens and quick submissions.</li>
-  <li><a href="./2025/Robert_Kranson_Resume_2025">Generalist Resume (Full)</a>: Detailed multi-role experience with broader technical and leadership context.</li>
-</ul>
+<nav aria-label="Resume options">
+  <ul>
+    <li><a href="./General_Laborer_Resume_2026">Operations and Technology Resume (2026)</a>: Highlights hands-on delivery, operations coordination, AI tool fluency, and compliance-readiness support.</li>
+    <li><a href="./2026/AI_Uniface10_Manufacturing_Robert_Kranson_Resume">Uniface 10 and AI Integration Resume</a>: Inside Automation 2026 Artificial Intelligence.</li>
+    <li><a href="./2025/Devops_Robert_Kranson_Resume">DevOps Resume</a>: Focused version for DevOps, platform engineering, and release pipeline roles.</li>
+    <li><a href="./2025/Robert_Kranson_Resume_1pg_2025">Generalist Resume (1 Page)</a>: Concise summary for recruiter screens and quick submissions.</li>
+    <li><a href="./2025/Robert_Kranson_Resume_2025">Generalist Resume (Full)</a>: Detailed multi-role experience with broader technical and leadership context.</li>
+  </ul>
+</nav>
 
 <h2 id="get-a-pdf">Get a PDF</h2>
 
@@ -547,7 +566,7 @@
     </div>
   </main>
   <footer>
-    &copy; 2026 Robert P. Kranson &mdash; IT Professional Portfolio
+    <p>&copy; 2026 Robert P. Kranson &mdash; IT Professional Portfolio</p>
   </footer>
 </body>
 </html>

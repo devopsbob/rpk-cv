@@ -25,11 +25,12 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-header h1 {
+.site-brand .brand-text .site-title {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-weight: 700;
     letter-spacing: 1px;
+    color: #fff;
 }
 
 header p {
@@ -60,12 +61,30 @@ header p {
     border-radius: 8px;
     background: #111827; /* fallback */
 }
-.site-brand .brand-text h1 {
-    margin: 0;
-    font-size: 2.1rem;
-}
 .site-brand .brand-text p {
     margin: 4px 0 0 0;
+}
+
+/* Skip-to-content link (visible on keyboard focus only) */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #fff;
+    color: #232f3e;
+    padding: 8px 16px;
+    border-radius: 0 0 6px 0;
+    z-index: 1000;
+}
+.skip-link:focus {
+    left: 0;
+}
+
+/* Contact / address blocks */
+address {
+    font-style: normal;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
 }
 
 .container {
@@ -105,7 +124,7 @@ a:hover {
         padding: 8px 12px;
     }
 
-    header h1 {
+    .site-brand .brand-text .site-title {
         font-size: 1.5rem;
     }
 }

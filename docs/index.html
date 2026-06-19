@@ -3,14 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae and Resumes of Robert (Bob Kranson)</title>
-  <meta name="cache-version" content="20260608174450" />
+  <title>Curriculum Vitae and Resumes of Robert (Bob) Kranson</title>
+  <meta name="description" content="Curriculum vitae and resume hub for Robert (Bob) Kranson — Technical Architect specializing in DevOps, enterprise content management, and Java platforms." />
+  <meta name="author" content="Robert P. Kranson" />
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Curriculum Vitae and Resumes of Robert (Bob) Kranson" />
+  <meta property="og:description" content="Curriculum vitae and resume hub for Robert (Bob) Kranson — Technical Architect specializing in DevOps, enterprise content management, and Java platforms." />
+  <meta property="og:image" content="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_512x512.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:site_name" content="IT Professional Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Curriculum Vitae and Resumes of Robert (Bob) Kranson" />
+  <meta name="twitter:description" content="Curriculum vitae and resume hub for Robert (Bob) Kranson — Technical Architect specializing in DevOps, enterprise content management, and Java platforms." />
+  <meta name="twitter:image" content="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_512x512.png" />
+  <meta name="cache-version" content="20260618235915" />
   
-    <link rel="canonical" href="https://devopsbob.github.io/rpk-cv" />
-    <link rel="icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260608174450" />
-    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/logo-mijug-180x180.png?v=20260608174450" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20260608174450" />
-    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20260608174450">
+    <link rel="canonical" href="https://devopsbob.github.io/rpk-cv/" />
+    <link rel="icon" type="image/svg+xml" href="https://devopsbob.github.io/rpk-cv/assets/favicon.svg?v=20260618235915" />
+    <link rel="apple-touch-icon" type="image/png" href="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_512x512.png?v=20260618235915" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devopsbob.github.io/rpk-cv/assets/favicon.ico?v=20260618235915" />
+    <link rel="stylesheet" href="https://devopsbob.github.io/rpk-cv/assets/css/main.css?v=20260618235915">
   
   <noscript>
     <div class="legacy-browser-notice" role="alert">
@@ -30,7 +44,7 @@
       // Only initialize advanced navigation for modern browsers
       if (!supportsModules) {
         html.classList.add('no-modules');
-        // Show legacy browser notice for commerce functionality
+        // Show legacy browser notice when ES modules are unsupported
         document.write('<div class="legacy-browser-notice" role="alert"><strong>No Module Support Available</strong><span class="notice-detail">Your browser does not support modern features required.</span></div>');
         return; // Exit early for legacy browsers
       }
@@ -45,13 +59,13 @@
       var supportsEcmascript2022 = false;
       const html = document.documentElement;
       try {
-        const mod = await import('https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260608174450');
+        const mod = await import('https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260618235915');
         if (mod && typeof mod.testES2022Features === 'function') {
           try { 
             await mod.testES2022Features(); 
-            supportsEcmascript2022 = true;
-          } catch (e) { console.error('ES2022 test failed:', e); }
-        } else if (typeof window.testES2022Features === 'function') {
+            supportsEcmascript2022 = true;
+          } catch (e) { console.error('ES2022 test failed:', e); }
+        } else if (typeof window.testES2022Features === 'function') {
           try { await window.testES2022Features();
             supportsEcmascript2022 = true;
            } catch (e) { console.error('ES2022 test failed:', e); }
@@ -63,7 +77,7 @@
       }
       if (!supportsEcmascript2022) {
         html.classList.add('no-ES2022');
-        // Show legacy browser notice for commerce functionality
+        // Show legacy browser notice when ES2022 features are unsupported
         const legacyBrowserNotice = document.createElement('div');
         legacyBrowserNotice.className = 'legacy-browser-notice';
         legacyBrowserNotice.setAttribute('role', 'alert');
@@ -88,7 +102,7 @@
       }
     })();
   </script>
-  <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260608174450" async crossorigin="anonymous"></script>
+  <script type="module" src="https://devopsbob.github.io/rpk-cv/assets/js/rpk-cv-es2022.min.js?v=20260618235915" async crossorigin="anonymous"></script>
   <script type="application/ld+json"> 
     {
   "@context": {
@@ -501,20 +515,23 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header>
     <div class="site-brand">
       <a class="brand-link" href="https://devopsbob.github.io/rpk-cv/">
-        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo_180x180.png?v=20260608174450" alt="IT Professional Portfolio logo" />
+        <img class="logo" src="https://devopsbob.github.io/rpk-cv/assets/images/kranson_enterprises_logo.svg?v=20260618235915" width="56" height="56" alt="IT Professional Portfolio logo" />
       </a>
       <div class="brand-text">
-        <h1>IT Professional Portfolio</h1>
+        <p class="site-title">IT Professional Portfolio</p>
         <p>Curriculum Vitae & Professional Resumes for Robert (Bob) Kranson.</p>
       </div>
     </div>
   </header>
-  <main>
+  <main id="main">
     <div class="container">
-    <p>Welcome to my curriculum vitae hub. These pages intentionally present minimal public information to encourage serious inquiries and focused discussions about business outcomes.</p>
+    <h1 id="curriculum-vitae--resume-hub">Curriculum Vitae &amp; Resume Hub</h1>
+
+<p>Welcome to my curriculum vitae hub. These pages intentionally present minimal public information to encourage serious inquiries and focused discussions about business outcomes.</p>
 
 <p>I design and deploy infrastructure and application build systems with a strong focus on secure, best‑of‑breed configurations. I have applied these skills across industries as both an implementer and a vendor support technician, and I have built a variety of static and dynamic websites over the years.</p>
 
@@ -524,12 +541,16 @@
 
 <h2 id="robert-bob-kranson">Robert (Bob) Kranson</h2>
 
-<p><strong>Sterling Heights, Michigan, 48310</strong>
+<address>
+  <p><strong>Sterling Heights, Michigan, 48310</strong><br />
 <strong><a href="mailto:devopsbob@outlook.com">devopsbob@outlook.com</a></strong></p>
+</address>
 
-<ul>
-  <li><a href="./resumes/General_Laborer_Resume_2026">General Laborer Resume</a></li>
-</ul>
+<nav aria-label="Resumes">
+  <ul>
+    <li><a href="./resumes/General_Laborer_Resume_2026">General Laborer Resume</a></li>
+  </ul>
+</nav>
 
 <h2 id="protected-links">Protected Links</h2>
 
@@ -537,17 +558,21 @@
 
 <h3 id="resumes">Resumes</h3>
 
-<ul>
-  <li><a href="./resumes/resumes">Resumes Page</a></li>
-</ul>
+<nav aria-label="Protected resumes">
+  <ul>
+    <li><a href="./resumes/resumes">Resumes Page</a></li>
+  </ul>
+</nav>
 
 <h3 id="curriculum-vitae">Curriculum Vitae</h3>
 
 <p>This is a comprehensive work history compiled from multiple resumes and roles across many years of technical consulting.</p>
 
-<ul>
-  <li><a href="./cv/Robert-P-Kranson-Curriculum-Vitae">Curriculum Vitae of Robert P Kranson</a></li>
-</ul>
+<nav aria-label="Curriculum vitae">
+  <ul>
+    <li><a href="./cv/Robert-P-Kranson-Curriculum-Vitae">Curriculum Vitae of Robert P Kranson</a></li>
+  </ul>
+</nav>
 
 <h2 id="use-cases">Use Cases</h2>
 
@@ -569,7 +594,7 @@
     </div>
   </main>
   <footer>
-    &copy; 2026 Robert P. Kranson &mdash; IT Professional Portfolio
+    <p>&copy; 2026 Robert P. Kranson &mdash; IT Professional Portfolio</p>
   </footer>
 </body>
 </html>
